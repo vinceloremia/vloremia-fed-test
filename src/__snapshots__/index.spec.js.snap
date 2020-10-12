@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Mount mounts the App into the DOM root node 1`] = `"<div>Mock App</div>"`;
