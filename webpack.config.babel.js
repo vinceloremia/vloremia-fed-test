@@ -90,6 +90,14 @@ const images = {
 	}
 };
 
+const css = {
+	test: /\.(css)$/,
+	use: [
+		'style-loader', // creates style nodes from JS strings
+		'css-loader' // translates CSS into CommonJS
+	]
+};
+
 export const devPlugins = [
 	new webpack.HotModuleReplacementPlugin(),
 	new webpack.DefinePlugin({
@@ -147,7 +155,7 @@ const defaultConfig = {
 		}
 	},
 	module: {
-		rules: [js, svg, images]
+		rules: [js, svg, images, css]
 	},
 	optimization: {
 		splitChunks: {
